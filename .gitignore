@@ -1,0 +1,7 @@
+# vscode ide
+.vscode/
+
+# object files
+include/
+build/
+*.o
