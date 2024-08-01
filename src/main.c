@@ -94,6 +94,10 @@ int main() {
                 .path = "purrify",
                 .handler = systemd_handler
             },
+            {
+                .path = "qotd",
+                .handler = systemd_handler
+            },
 
             // minecraft servers
             {
@@ -106,20 +110,6 @@ int main() {
             },
             {
                 .path = "lobby",
-                .handler = systemd_handler
-            },
-            {
-                .path = "daybreak",
-                .handler = systemd_handler
-            },
-
-            // better bedwars
-            {
-                .path = "betterbedwars",
-                .handler = systemd_handler
-            },
-            {
-                .path = "betterbedwarswebapp",
                 .handler = systemd_handler
             },
 
@@ -143,7 +133,7 @@ int main() {
                 .handler = systemd_handler
             }
         },
-        .num_endpoints = 14
+        .num_endpoints = 12
     };
     http_create_context(&context);
     pContext = &context;
